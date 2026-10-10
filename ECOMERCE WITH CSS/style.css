@@ -1,0 +1,85 @@
+body
+{
+    background: url(images/background.jpeg);
+}
+.container {
+display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "menu menu menu menu"
+    "banner banner banner banner"
+    "title title title title"
+    "products products products products"
+    "offers offers offers offers"
+    "services services services services"
+    "footer footer footer footer";
+}
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    height: 100px;
+    padding: 10px 20px;
+    background-color: aqua;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.logo img {
+    width: 180px;
+    height: 60px;
+    object-fit: contain;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.search input[type="text"] {
+    width: 350px;
+    height: 38px;
+    padding: 8px;
+    border: none;
+}
+.search input[type="submit"] {
+    height: 38px;
+    padding: 0 15px;
+    border: none;
+    background-color: #FFB300;
+    cursor: pointer;
+}
+.account {
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.categories {
+    grid-area: menu;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    height: 50px;
+    background-color: #19d29b;
+    color: white;
+    text-align: center;
+}
+.categories div {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.categories div a{
+    text-decoration: none;
+}
+.categories div:hover {
+    background-color: #a10d8d;
+}

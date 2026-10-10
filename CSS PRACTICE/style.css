@@ -1,0 +1,11 @@
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+ gap:10px;
+}
+
+.cell{
+ height:100px;
+ background:skyblue;
+ border:2px solid black;
+}
